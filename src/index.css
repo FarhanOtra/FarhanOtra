@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@import url("https://db.onlinewebfonts.com/c/29800a9e7d146302b8ed9ad2f848db63?family=Druk+Wide+Web+Bold+Regular");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,10 +11,32 @@
 @layer base {
   html {
     font-family: [ "Poppins", sans-serif];
+    user-select: none;
   }
   body {
     font-family: [ "Poppins", sans-serif];
   }
+}
+
+.scene {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.panel {
+  transform-origin: center right;
+  transform: rotateY(-30deg);
+  transition: all 1s ease-out;
+}
+
+.panel:hover {
+  transform-origin: center right;
+  transform: rotateY(0deg);
+  transition: all 1s ease-out;
+}
+
+.text-stroke {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .active {
