@@ -2,7 +2,7 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Tech from "./components/Tech";
-import Portfolio from "./components/Portfolio";
+import Project from "./components/Project";
 import Contact from "./components/Contact";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <About />
       <Tech />
-      <Portfolio />
+      <Project />
       <Contact />
     </>
   );

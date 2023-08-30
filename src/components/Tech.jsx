@@ -69,16 +69,16 @@ const Tech = () => {
                 <AnimatePresence>
                   {frontend && (
                     <motion.div initial={{ opacity: 0, x: 1000 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 1000 }} transition={{ duration: 2 }} className="w-full md:w-2/3  float-right pb-3">
-                      <Marquee speed={50} autoFill pauseOnHover gradient gradientWidth={100} gradientColor={[241, 245, 249]} className="h-[50px] overflow-hidden w-1/2">
-                        <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/redux.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" alt="" className="w-auto h-[40px] mr-10" />
+                      <Marquee speed={50} autoFill pauseOnHover gradient gradientWidth={100} gradientColor={[241, 245, 249]} className="h-[30px] md:h-[50px] overflow-hidden w-1/2">
+                        <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/redux.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
                       </Marquee>
                     </motion.div>
                   )}
@@ -98,12 +98,12 @@ const Tech = () => {
                 <AnimatePresence>
                   {backend && (
                     <motion.div initial={{ opacity: 0, x: 1000 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 1000 }} transition={{ duration: 2 }} className="w-full md:w-2/3  float-right pb-3">
-                      <Marquee speed={50} autoFill pauseOnHover gradient gradientWidth={100} gradientColor={[241, 245, 249]} className="h-[50px] overflow-hidden w-1/2">
-                        <img src="https://cdn.worldvectorlogo.com/logos/nodejs.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/express-109.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/php-1.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/lumen-1.svg" alt="" className="w-auto h-[40px] mr-10" />
+                      <Marquee speed={50} autoFill pauseOnHover gradient gradientWidth={100} gradientColor={[241, 245, 249]} className="h-[30px] md:h-[50px] overflow-hidden w-1/2">
+                        <img src="https://cdn.worldvectorlogo.com/logos/nodejs.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/express-109.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/php-1.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/lumen-1.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
                       </Marquee>
                     </motion.div>
                   )}
@@ -123,10 +123,10 @@ const Tech = () => {
                 <AnimatePresence>
                   {mobile && (
                     <motion.div initial={{ opacity: 0, x: 1000 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 1000 }} transition={{ duration: 2 }} className="w-full md:w-2/3  float-right pb-3">
-                      <Marquee speed={50} autoFill pauseOnHover gradient gradientWidth={100} gradientColor={[241, 245, 249]} className="h-[50px] overflow-hidden w-1/2">
-                        <img src="https://cdn.worldvectorlogo.com/logos/android-studio-logo.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/kotlin-1.svg" alt="" className="w-auto h-[40px] mr-10" />
+                      <Marquee speed={50} autoFill pauseOnHover gradient gradientWidth={100} gradientColor={[241, 245, 249]} className="h-[30px] md:h-[50px] overflow-hidden w-1/2">
+                        <img src="https://cdn.worldvectorlogo.com/logos/android-studio-logo.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/kotlin-1.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
                       </Marquee>
                     </motion.div>
                   )}
@@ -146,11 +146,11 @@ const Tech = () => {
                 <AnimatePresence>
                   {database && (
                     <motion.div initial={{ opacity: 0, x: 1000 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 1000 }} transition={{ duration: 2 }} className="w-full md:w-2/3  float-right pb-3">
-                      <Marquee speed={50} autoFill pauseOnHover gradient gradientWidth={100} gradientColor={[241, 245, 249]} className="h-[50px] overflow-hidden w-1/2">
-                        <img src="https://cdn.worldvectorlogo.com/logos/mysql-logo.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="" className="w-auto h-[40px] mr-10" />
-                        <img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="" className="w-auto h-[40px] mr-10" />
+                      <Marquee speed={50} autoFill pauseOnHover gradient gradientWidth={100} gradientColor={[241, 245, 249]} className="h-[30px] md:h-[50px] overflow-hidden w-1/2">
+                        <img src="https://cdn.worldvectorlogo.com/logos/mysql-logo.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
+                        <img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="" className="w-auto h-[30px] md:h-[40px] mr-10" />
                       </Marquee>
                     </motion.div>
                   )}

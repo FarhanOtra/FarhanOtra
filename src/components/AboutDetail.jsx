@@ -15,7 +15,7 @@ const AboutDetail = () => {
             opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
-          className="w-full md:w-1/2 text-center md:text-left pr-5"
+          className="w-full md:w-1/2 text-center md:text-left "
         >
           <h2 className="text-2xl pt-10 font-bold font-Montserrat text-slate-500">About Me</h2>
           <h1 className="text-4xl font-extrabold text-slate-100">Greetings!</h1>

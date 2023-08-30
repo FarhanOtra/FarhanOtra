@@ -15,8 +15,8 @@ const Navbar = () => {
             <Link to="tech" activeClass="active" spy className="px-4 py-2 text-slate-400 text-xs font-semibold hover:bg-slate-100 hover:text-slate-800 hover:rounded-3xl cursor-pointer">
               TECH
             </Link>
-            <Link to="portfolio" activeClass="active" spy className="px-4 py-2 text-slate-400 text-xs font-semibold hover:bg-slate-100 hover:text-slate-800 hover:rounded-3xl cursor-pointer">
-              PORTFOLIO
+            <Link to="project" activeClass="active" spy className="px-4 py-2 text-slate-400 text-xs font-semibold hover:bg-slate-100 hover:text-slate-800 hover:rounded-3xl cursor-pointer">
+              PROJECTS
             </Link>
             <Link to="contact" activeClass="active" spy className="px-4 py-2 text-slate-400 text-xs font-semibold hover:bg-slate-100 hover:text-slate-800 hover:rounded-3xl cursor-pointer">
               CONTACT

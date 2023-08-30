@@ -19,7 +19,7 @@ const About = () => {
         <motion.div style={{ y: paralaxText }} className="h-1/2 pt-40 pb-30 z-0">
           <div className="block overflow-hidden">
             <motion.h1 initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ ease: "easeOut", duration: 0.5 }} className="text-slate-100 font-light text-3xl text-center font-Montserrat">
-              FRONT END WEB DEVELOPER
+              WEB DEVELOPER
             </motion.h1>
           </div>
           <div className="block overflow-hidden">
