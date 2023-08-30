@@ -11,7 +11,7 @@ const Project = () => {
   const isInView = useInView(projectRef, { once: true });
 
   return (
-    <section id="project" ref={projectRef} className="bg-slate-950 pt-16">
+    <section id="project" ref={projectRef} className="bg-slate-950 pt-32">
       <div className="container mx-auto mb-16 px-4 lg:px-28">
         <div className="block relative overflow-hidden">
           <motion.h2
@@ -20,7 +20,7 @@ const Project = () => {
               opacity: isInView ? 1 : 0,
               transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             }}
-            className="text-sm md:text-xl font-bold font-Dunk text-slate-500 text-center relative"
+            className="text-sm lg:text-3xl font-bold font-Montserrat text-slate-500 text-center relative"
           >
             List of
           </motion.h2>
@@ -32,7 +32,7 @@ const Project = () => {
               opacity: isInView ? 1 : 0,
               transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
             }}
-            className="text-4xl font-extrabold text-slate-100 text-center font-Dunk"
+            className="text-5xl font-extrabold text-slate-100 text-center font-Montserrat"
           >
             PROJECTS
           </motion.h2>
@@ -58,10 +58,12 @@ const Project = () => {
                 <img src="https://cdn.worldvectorlogo.com/logos/android-logomark.svg" alt="" />
                 <img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="" />
               </div>
-              <div className="flex w-1/4 gap-1 rounded-md bg-slate-300 py-3 px-6 lg:px-10 justify-center cursor-pointer hover:scale-110 transition-all duration-500">
-                <img src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" alt="" />
-                <img src="https://cdn.worldvectorlogo.com/logos/github-2.svg" alt="" />
-              </div>
+              <a href="https://github.com/FarhanOtra/absensi-siswa" target="_blank" className="w-1/4 flex" rel="noreferrer">
+                <div className="flex gap-1 rounded-md bg-slate-300 py-3 px-6 lg:px-10 justify-center cursor-pointer hover:scale-110 transition-all duration-500">
+                  <img src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" alt="" />
+                  <img src="https://cdn.worldvectorlogo.com/logos/github-2.svg" alt="" />
+                </div>
+              </a>
             </div>
           </div>
           <div className="flex flex-wrap lg:flex-nowrap w-full lg:w-3/5 gap-4">

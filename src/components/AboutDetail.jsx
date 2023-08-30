@@ -8,7 +8,7 @@ const AboutDetail = () => {
 
   return (
     <div ref={aboutRef} className=" bg-slate-950 overflow-hidden">
-      <div className="container mx-auto pb-32 pt-4 px-4 lg:px-28 justify-center items-center  flex flex-wrap">
+      <div className="container mx-auto pb-32 pt-4 px-4 lg:px-28 justify-center items-center flex flex-wrap md:flex-nowrap gap-5">
         <motion.div
           style={{
             transform: isInView ? "none" : "translateX(-200px)",

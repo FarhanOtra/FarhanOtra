@@ -15,15 +15,15 @@ const About = () => {
 
   return (
     <section ref={ref} id="about">
-      <div className="w-full bg-slate-950">
-        <motion.div style={{ y: paralaxText }} className="h-1/2 pt-40 pb-30 z-0">
+      <div className="w-full h-screen  bg-slate-950">
+        <motion.div style={{ y: paralaxText }} className="h-1/2 pt-32 pb-30 z-0">
           <div className="block overflow-hidden">
-            <motion.h1 initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ ease: "easeOut", duration: 0.5 }} className="text-slate-100 font-light text-3xl text-center font-Montserrat">
+            <motion.h1 initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ ease: "easeOut", duration: 0.5 }} className="text-slate-100 font-light text-xl lg:text-3xl text-center font-Montserrat">
               WEB DEVELOPER
             </motion.h1>
           </div>
           <div className="block overflow-hidden">
-            <motion.h2 initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ ease: "easeOut", duration: 1, delay: 0.5 }} className="text-slate-100 font-extrabold tracking-wide text-6xl text-center font-Montserrat">
+            <motion.h2 initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ ease: "easeOut", duration: 1, delay: 0.5 }} className="text-slate-100 font-extrabold tracking-wide text-4xl lg:text-6xl text-center font-Montserrat">
               FARHAN NAUFAL OTRA
             </motion.h2>
           </div>
@@ -51,12 +51,12 @@ const About = () => {
             </motion.li>
           </ul>
         </motion.div>
-        <div className="h-1/2 justify-center flex">
+        <div className="h-1/2 justify-center items-end flex">
           <img src={photo} alt="" className="h-[400px] min-h-min justify-center z-10"></img>
         </div>
       </div>
       <div className="w-full overflow-hidden bg-slate-950">
-        <Marquee speed={100} autoFill pauseOnHover className="bg-slate-500 text-7xl font-extrabold tracking-wide overflow-hidden font-Dunk pt-4">
+        <Marquee speed={100} autoFill pauseOnHover className="bg-slate-500 text-7xl font-extrabold tracking-wide overflow-hidden font-Montserrat">
           ABOUTMEABOUTME<p className="text-slate-100">&copy;FARHANOTRA</p>ABOUTMEABOUTME
         </Marquee>
       </div>

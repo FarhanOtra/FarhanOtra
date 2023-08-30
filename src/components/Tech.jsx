@@ -26,10 +26,10 @@ const Tech = () => {
   return (
     <section id="tech" ref={techRef} className="bg-slate-100">
       <div className="container mx-auto px-4 lg:px-28">
-        <div className="pb-20">
+        <div className="pb-32">
           <div className="scene w-full h-full">
             <div className="w-full panel">
-              <div className="pt-20">
+              <div className="pt-32">
                 <div className="block relative overflow-hidden">
                   <motion.h2
                     style={{
@@ -62,7 +62,7 @@ const Tech = () => {
                     opacity: isInView ? 1 : 0,
                     transition: "transform 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
                   }}
-                  className={`text-3xl md:text-8xl font-Dunk text-stroke ${frontend ? "text-slate-100" : "text-slate-900 hover:text-slate-100"}  cursor-pointer text-right py-3`}
+                  className={`text-3xl md:text-8xl font-Dunk text-stroke ${frontend ? " text-slate-100" : "text-slate-900 hover:text-slate-100"}  cursor-pointer text-right py-3`}
                 >
                   <span className="text-xl align-top">1</span>/FRONTEND
                 </motion.h1>

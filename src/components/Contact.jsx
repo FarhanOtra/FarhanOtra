@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { motion, useInView } from "framer-motion";
 import earth from "../assets/earth.gif";
 
 const Contact = () => {
   const [isCopy, setCopy] = useState(false);
+  const contactRef = useRef();
+  const isInView = useInView(contactRef, { once: true });
 
   const copyHandler = () => {
     navigator.clipboard.writeText("otra.farhan@gmail.com");
@@ -10,24 +13,53 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact">
-      <div className="container h-screen p-16 mx-auto px-4 lg:px-28">
-        <h2 className="text-md pt-10 font-bold font-Dunk text-slate-900 text-center">Get in Touch</h2>
-        <h1 className="text-4xl font-extrabold text-slate-500 text-center font-Dunk">CONTACT</h1>
-        <div className="py-16 grid grid-cols-4 lg:grid-cols-8 gap-3">
-          <div className="flex flex-wrap content-between p-10 lg:p-16 col-span-4 lg:col-span-6 row-span-2 bg-slate-950 rounded-xl">
-            <div className="w-full">
+    <section id="contact" ref={contactRef}>
+      <div className="container h-screen py-32 mx-auto px-4 lg:px-28">
+        <div className="block relative overflow-hidden">
+          <motion.h2
+            style={{
+              transform: isInView ? "none" : "translateY(200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}
+            className="text-sm lg:text-3xl font-bold font-Montserrat text-slate-900 text-center relative"
+          >
+            Get in Touch
+          </motion.h2>
+        </div>
+        <div className="block relative overflow-hidden">
+          <motion.h2
+            style={{
+              transform: isInView ? "none" : "translateY(200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
+            }}
+            className="text-5xl font-extrabold text-slate-500 text-center font-Montserrat"
+          >
+            CONTACT
+          </motion.h2>
+        </div>
+        <div className="py-16 grid grid-cols-4 lg:grid-cols-8 gap-1 md:gap-3">
+          <motion.div
+            style={{
+              transform: isInView ? "none" : "translateX(-200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "transform 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s, opacity 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
+            }}
+            className="flex flex-wrap content-between p-10 lg:p-16 col-span-4 lg:col-span-6 row-span-2 bg-slate-950 rounded-xl"
+          >
+            <div className="w-full mb-4 md:mb-0">
               <h1 className="text-slate-100 font-Poppins">
                 <span className="animate-ping absolute">🟢</span>
                 <span>🟢</span> Available for Work
               </h1>
             </div>
-            <div className="w-full">
+            <div className="w-full mb-16 md:mb-0">
               <h1 className="text-3xl font-Poppins text-slate-100 font-extrabold">Contact Me.</h1>
-              <h2 className="text-xl font-Poppins text-slate-400 mb-12">otra.farhan@gmail.com</h2>
+              <h2 className="text-xl font-Poppins text-slate-400">otra.farhan@gmail.com</h2>
             </div>
             <div className="w-full flex">
-              <a href="mailto:otra.farhan@gmail.com" className="block w-full px-8 py-3 bg-slate-300 mr-3 font-semibold font-Poppins text-xl rounded-xl text-center hover:bg-slate-400 hover:scale-[102%] transition-all duration-500 group">
+              <a href="mailto:otra.farhan@gmail.com" className="block w-full px-8 py-3 bg-slate-300 mr-1 md:mr-3 font-semibold font-Poppins text-xl rounded-xl text-center hover:bg-slate-400 hover:scale-[102%] transition-all duration-500 group">
                 <button className="text-slate-950 group-hover:text-slate-100 group-hover:tracking-wider transition-all duration-500">Email Me!</button>
               </a>
               <button className="w-[50px] px-3 py-3 bg-slate-300 font-Poppins text-xl rounded-xl hover:bg-slate-400 hover:scale-[110%] focus:bg-slate-100 transition-all duration-500 group text-center flex justify-center items-center" onClick={copyHandler}>
@@ -45,26 +77,59 @@ const Contact = () => {
                 )}
               </button>
             </div>
-          </div>
-          <a href="https://www.linkedin.com/in/farhanotra/" target="_blank" rel="noreferrer">
-            <div className="p-5 lg:p-12 bg-slate-950 rounded-xl hover:scale-105 hover:bg-slate-800 group transition-all duration-500">
+          </motion.div>
+          <motion.a
+            style={{
+              transform: isInView ? "none" : "translateY(-200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "transform 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 2.5s, opacity 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 2.5s",
+            }}
+            href="https://www.linkedin.com/in/farhanotra/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="h-full flex justify-center items-center p-6 lg:p-12 bg-slate-950 rounded-xl hover:scale-105 hover:bg-slate-800 group transition-all duration-500">
               <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-1.svg" alt="" className="invert grayscale group-hover:scale-105 transition-all duration-500" />
             </div>
-          </a>
-          <a href="https://www.linkedin.com/in/farhanotra/" target="_blank" rel="noreferrer">
-            <div className="p-5 lg:p-12 bg-slate-950 rounded-xl hover:scale-105 hover:bg-slate-800 group transition-all duration-500">
+          </motion.a>
+          <motion.a
+            style={{
+              transform: isInView ? "none" : "translateY(-200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "transform 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 3.5s, opacity 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 3.5s",
+            }}
+            href="https://github.com/FarhanOtra"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="h-full flex justify-center items-center p-6 lg:p-12 bg-slate-950 rounded-xl hover:scale-105 hover:bg-slate-800 group transition-all duration-500">
               <img src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" alt="" className="invert grayscale-1 hover:grayscale-0 group-hover:scale-105 transition-all duration-500" />
             </div>
-          </a>
-          <a href="https://www.linkedin.com/in/farhanotra/" target="_blank" rel="noreferrer">
-            <div className="p-5 lg:p-12 bg-slate-950 rounded-xl hover:scale-105 hover:bg-slate-800 group transition-all duration-500">
+          </motion.a>
+          <motion.a
+            style={{
+              transform: isInView ? "none" : "translateY(-200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "transform 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 2s, opacity 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 2s",
+            }}
+            href="https://api.whatsapp.com/send?phone=6282268328293"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="h-full flex justify-center items-center p-6 lg:p-12 bg-slate-950 rounded-xl hover:scale-105 hover:bg-slate-800 group transition-all duration-500">
               <img src="https://cdn.worldvectorlogo.com/logos/whatsapp-glyph-black.svg" alt="" className="invert grayscale group-hover:scale-105 transition-all duration-500" />
             </div>
-          </a>
-          <div className="bg-slate-950 rounded-xl hover:scale-105 hover:bg-slate-800 group transition-all duration-500 overflow-hidden relative">
-            <img src={earth} alt="" className="w-full h-full" />
-            <h1 className="text-sm p-1 lg:p-4 absolute right-0 bottom-0 text-slate-100 font-Poppins">📍Indonesia</h1>
-          </div>
+          </motion.a>
+          <motion.div
+            style={{
+              transform: isInView ? "none" : "translateY(-200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "transform 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 3s, opacity 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 3s",
+            }}
+            className="h-full flex justify-center items-center bg-slate-950 rounded-xl hover:scale-105 hover:bg-slate-800 group transition-all duration-500 overflow-hidden"
+          >
+            <img src={earth} alt="" className="w-auto h-[100%]" />
+          </motion.div>
         </div>
       </div>
     </section>
