@@ -32,7 +32,7 @@ const Project = () => {
               opacity: isInView ? 1 : 0,
               transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
             }}
-            className="text-4xl md:text-5xl font-extrabold text-slate-100 text-center font-Dunk"
+            className="text-4xl font-extrabold text-slate-100 text-center font-Dunk"
           >
             PROJECTS
           </motion.h2>
@@ -47,7 +47,7 @@ const Project = () => {
           className="flex flex-wrap lg:flex-nowrap w-full mx-auto gap-4 group hover:bg-slate-100 transition-colors duration-500 px-4 lg:px-28 py-5 lg:py-16"
         >
           <div className="w-full lg:w-2/5">
-            <h1 className="text-3xl text-slate-100 font-bold mb-3 font-Montserrat tracking-widest group-hover:text-slate-950">SCAN</h1>
+            <h1 className="text-3xl text-slate-100 font-extrabold mb-3 font-Montserrat tracking-widest group-hover:text-slate-950">SCAN</h1>
             <h2 className="text-sm text-slate-300 font-Poppins group-hover:text-slate-900">SCAN is a mobile-based student attendance information system using the QR Code feature so that the attendance recording process can run faster and more effectively. Features owned by SCAN are recording student attendance, recapitulating student attendance and student leave letters through mobile applications</h2>
             <hr className="h-px my-3 bg-slate-100 group-hover:border-slate-950 border-1"></hr>
             <div className="w-full h-10 flex gap-3">
@@ -91,7 +91,7 @@ const Project = () => {
             </div>
           </div>
           <div className="w-full lg:w-2/5">
-            <h1 className="text-3xl text-slate-100 font-bold mb-3 font-Montserrat tracking-widest group-hover:text-slate-950">COMING SOON</h1>
+            <h1 className="text-3xl text-slate-100 font-extrabold mb-3 font-Montserrat tracking-widest group-hover:text-slate-950">COMING SOON</h1>
             <h2 className="text-sm text-slate-300 font-Poppins group-hover:text-slate-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, excepturi inventore reprehenderit eius molestiae facilis repudiandae natus earum nisi deserunt porro officia quidem ut, dolorum modi quibusdam quam. Inventore, quasi! Commodi omnis minus totam dignissimos nisi unde vitae quos ullam, tempora error perferendis repellat obcaecati maiores esse laborum fugit magnam.</h2>
             <hr className="h-px my-3 bg-slate-100 group-hover:border-slate-950 border-1"></hr>
             <div className="w-full h-10 flex gap-3">
